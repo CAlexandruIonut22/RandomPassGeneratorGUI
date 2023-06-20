@@ -32,7 +32,7 @@ def create_random_pass(length):
 def change_text():
     l2_2.config(text=create_random_pass(int(E1.get())))
     l3_2.config(text=psfct.encrypt_pass(key, l2_2['text']))
-    l4_2.config(text=psfct.decrypt_pass(key, l3_2['text']))
+    # l4_2.config(text=psfct.decrypt_pass(key, l3_2['text']))
     l5_2.config(text=psfct.hash_pass(l2_2['text']))
 
 
@@ -58,8 +58,8 @@ l2_2 = tk.Label(font=("Arial", 12))
 l3_1 = tk.Label(font=("Arial", 16), text='Encrypted password is:')
 l3_2 = tk.Label(font=("Arial", 12))
 
-l4_1 = tk.Label(font=("Arial", 16), text='Decrypted password is:')
-l4_2 = tk.Label(font=("Arial", 12))
+# l4_1 = tk.Label(font=("Arial", 16), text='Decrypted password is:')
+# l4_2 = tk.Label(font=("Arial", 12))
 
 l5_1 = tk.Label(font=("Arial", 16), text='Hashed password is:')
 l5_2 = tk.Label(font=("Arial", 12))
@@ -73,11 +73,11 @@ E1.place(x=300, y=65)
 l2_1.place(x=65, y=130)
 l2_2.place(x=300, y=130)
 
-l3_1.place(x=65, y=230)
-l3_2.place(x=300, y=230)
+l3_1.place(x=65, y=270)
+l3_2.place(x=300, y=270)
 
-l4_1.place(x=65, y=330)
-l4_2.place(x=300, y=330)
+# l4_1.place(x=65, y=330)
+# l4_2.place(x=300, y=330)
 
 l5_1.place(x=65, y=430)
 l5_2.place(x=300, y=430)
